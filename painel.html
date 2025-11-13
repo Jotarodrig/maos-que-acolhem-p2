@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="painel.css">
+    <title>Painel do Usuário</title>
+</head>
+<body class="painel-body">
+    
+    <header class="topo-painel">
+        <h1>Bem-vindo(a), <span><?= $usuario_email ?></span></h1>
+        <form action="logout.php" method="post">
+            <button type="submit" class="btn-sair">Sair</button>
+        </form>
+    </header>
+
+    <main class="painel">
+        <section class="painel-info">
+            <h2>Área do Usuário</h2>
+            <p>Escolha abaixo o que deseja fazer na plataforma:</p>
+        </section>
+
+        <section class="menu-painel">
+            <a href="index.html" class="card">
+                <h3>Página Inicial</h3>
+                <p>Volte para o início do site.</p>
+            </a>
+
+            <a href="historia.html" class="card">
+                <h3>Nosso Blog</h3>
+                <p>Leia histórias e conteúdos inspiradores.</p>
+            </a>
+
+            <a href="saude.html" class="card">
+                <h3>Dicas de Saúde</h3>
+                <p>Cuide bem do corpo e da mente.</p>
+            </a>
+
+            <a href="contato.html" class="card">
+                <h3>Contatos</h3>
+                <p>Fale com nossa equipe ou deixe uma mensagem.</p>
+            </a>
+
+            <a href="comunicacao.html" class="card">
+                <h3>Canais de comunicação</h3>
+                <p>Um cantinho para conversar e se sentir em casa.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2025 Mãos que acolhem — Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

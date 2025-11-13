@@ -1,0 +1,88 @@
+:root{
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #d4a373;
+    --cor-texto: #1f2d3d;
+    --cor-de-fundo: #faf8f4;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.topo-saude{
+    text-align: center;
+    background: linear-gradient(to bottom, var(--cor-secundaria), #b48a4f);
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.topo-saude h1{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.topo-saude p {
+    font-size: 1.2rem;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.bloco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+}
+
+.bloco:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.bloco.mostrar{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bloco img{
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2{
+    color: var(--cor-secundaria);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.texto p{
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.rodape-saude{
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 0.95rem;
+    color: #777;
+}

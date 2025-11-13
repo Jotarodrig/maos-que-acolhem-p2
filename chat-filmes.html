@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="comunicacao.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Chat - filmes</title>
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="titulo" id="chatTitle">Chat</div>
+      <div id="status" style="font-size:.95rem;opacity:.9;color:#fff">Online</div>
+    </div>
+
+    <div class="chat-main">
+      <aside class="salas" id="listaSalas"></aside>
+
+      <section class="chat-area">
+        <div class="chat-box" id="chatBox"></div>
+
+        <div class="compor">
+          <input type="text" id="autorInput" placeholder="Seu nome..." />
+          <input type="text" id="mensagemInput" placeholder="Digite sua mensagem..." />
+          <button id="enviarBtn">Enviar</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="chat-footer">
+      <a href="comunicacao.html">⬅ Voltar às salas</a>
+    </div>
+  </div>
+
+  <script src="scripts.js">
+    window.TEMA = 'filmes';
+  </script>
+</body>
+</html>

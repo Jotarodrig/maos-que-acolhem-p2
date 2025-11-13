@@ -1,0 +1,107 @@
+.painel-body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* TOPO */
+.topo-painel {
+    background: linear-gradient(to bottom, #caa56b, #b48a4f);
+    color: #fff;
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.topo-painel h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.topo-painel span {
+    color: #fff9e6;
+    font-weight: bold;
+}
+
+/* BOTÃO SAIR */
+.btn-sair {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-color: #fff;
+    color: #d4a373;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-sair:hover {
+    background-color: #f0e6d6;
+}
+
+/* CONTEÚDO */
+.painel {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.painel-info h2 {
+    font-size: 28px;
+    color: #1f2d3d;
+}
+
+.painel-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* MENU */
+.menu-painel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #d4a373;
+}
+
+.card p {
+    font-size: 17px;
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #777;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+}

@@ -1,0 +1,134 @@
+.chat-container {
+    width: 90%;
+    max-width: 980px;
+    margin: 36px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 24px;
+
+}
+.chat-header .titulo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.chat-header .chat-subtitle {
+    font-size: 1rem; 
+    color: #555;
+    opacity: .9;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px; 
+    line-height: 1.6;
+}
+
+.chat-body {
+    padding: 20px 24px;
+}
+
+.salas-principais {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    width: fit-content; 
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.salas-principais::-webkit-scrollbar {
+    display: none;
+}
+
+.topico-link {
+    width: 175px;
+    height: 255px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.topico-link:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.topico-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+#sala-filmes {
+    background-image: url('https://imgs.search.brave.com/dIzAwItDFXXOAFrxGi_dJItbVgbkXCwdmEEEqRt81EQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb3Jh/c2VuaW9yLmNvbS5i/ci93cC1jb250ZW50/L3VwbG9hZHMvNS1m/aWxtZXMtc29icmUt/ZW52ZWxoZWNpbWVu/dG8tcXVlLXZvY2Ut/bmFvLXBvZGUtZGVp/eGFyLWRlLXZlci0x/LTEtc2NhbGVkLmpw/Zw');
+}
+#sala-futebol {
+    background-image: url('https://imgs.search.brave.com/z8RYERNOMrsfGCKoUbH2ml4gd_Qi3qPRtBRGnpgYwus/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMjgx/ZTc1emRxcWxvbi5j/bG91ZGZyb250Lm5l/dC9tZWRpYS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMy9p/ZG9zby05MC1mdXRl/Ym9sLWludGVybmEt/ZTE3MDk2ODAwMDk0/NjAuanBlZw');
+}
+#sala-lembrancas {
+    background-image: url('https://imgs.search.brave.com/aFk2qJPKYHfXI-zmiT6leaf84giTIEE6ZfX2Fm0FBEQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE3NTMzMjEy/MDY0MjktNmI4ZDVm/N2RlYTcxP2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHdhRzkwYnkxd1lX/ZGxmSHg4ZkdWdWZE/QjhmSHg4ZkE9PQ');
+}
+#sala-musicas {
+    background-image: url('https://imgs.search.brave.com/rCq9qLRmdnoNFEDFiBmOpEPfR6sx4O1esxkH9aN37kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYXpl/dGFkb2NlcnJhZG8u/Y29tLmJyL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE5LzEwL1do/YXRzQXBwLUltYWdl/LTIwMTktMTAtMjYt/YXQtMTEuMDcuNTYu/anBlZw');
+}
+
+.chat-descricao {
+    margin-top: 18px; 
+    color: #444; 
+    max-width: 760px;
+    font-size: 1rem;
+    margin-top: 18px; 
+    color: #444;
+
+}
+.chat-voltar {
+    margin-top: 28px;
+}
+.chat-voltar a {
+    color: #d4a373;
+    text-decoration: none;
+    font-weight: bold;
+}
+.chat-voltar a:hover {
+    text-decoration: underline;
+}
+
+.chat-footer {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 20px 24px;
+    margin-top: 20px;
+}
