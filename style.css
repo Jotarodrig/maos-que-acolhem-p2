@@ -125,46 +125,34 @@ header nav ul li a:hover{
 }
 
 .container_inicial{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
+    display: block;
     min-height: 90vh;
     background: linear-gradient(180deg, #faf8f4 0%, #f6ecdc 100%);
     overflow: hidden;
     position: relative;
     padding: 60px 0;
+    height: auto;
 }
-
 
 .list{
     display: flex;
-    width: 100%;
-    max-width: 1100px;
-    overflow: hidden;
+    width: 300%;
+    max-width: none;
     position: relative;
     transition: transform 0.8s ease-in-out;
 }
 
 .item{
-    min-width: 100%;
+    width: 33.3333%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
-    transition: opacity 0.8s ease;
-}
-
-.item.ativo{
     opacity: 1;
     pointer-events: all;
 }
 
-.item:not(.ativo) {
-    opacity: 0;
-    pointer-events: none;
-}
 
 .info-img img{
   width: 380px;

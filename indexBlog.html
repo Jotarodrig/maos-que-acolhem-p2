@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog - Mãos que acolhem</title>
+</head>
+<body>
+    
+
+    <header class="blog-header">
+        <div class="blog-header-inner">
+            <div class="logo-blog">Mãos que acolhem</div>
+            <nav>
+                <a class="nav-link" href="index.html">Início</a>
+                <a class="nav-link" href="comunicacao.html">Nosso canal de comunicação</a>
+            </nav>
+        </div>
+        <h1 class="blog-hero">Blog Mãos que acolhem - histórias, atividades e bem-estar</h1>
+        <p class="blog-sub">Conteúdo acolhedor pensado em conectar e unir toda nossa comuniade </p>
+    </header>
+
+    <main class="blog-main container-blog">
+        <section class="novo-post-area">
+            <h2>Criar uma nova postagem</h2>
+            <p class="muted">Use este formulário para publicar comunicados, lembranças, avisos ou relatos de suas atividades</p>
+
+            <div class="container-novo-post" aria-labelledby="novo-post-title">
+                <label for="post-titulo">Título</label>
+                <input id="post-titulo" type="text" placeholder="Ex: Atividade musical com Dona Helena">
+
+                <label for="post-categoria">Categoria</label>
+                <select id="post-categoria">
+                    <option value="lembranças">Lembranças</option>
+                    <option value="atividades">Atividades</option>
+                    <option value="saúde">Saúde</option>
+                    <option value="cultura">Cultura</option>
+                    <option value="Comunicado">Comunicado</option>
+                </select>
+
+                <label for="post-texto">Texto</label>
+                <textarea id="post-texto" rows="6" placeholder="Escreva aqui o texto de sua postagem..."></textarea>
+
+                <button class="btn-publicar" id="btnPublicar">Publicar</button>
+            </div>
+        </section>
+
+        <section class="lista-posts-area">
+            <div class="lista-top">
+                <h2>Últimas publicações</h2>
+                <a class="btn-chat" href="comunicacao.html" id="btnAcessarChat">Acessar painel de comunicação</a>
+            </div>
+
+            <div id="lista-posts" class="blog-list"></div>
+        </section>
+    </main>
+
+    <footer class="blog-footer">
+        <p>© <strong>Mãos que acolhem</strong> — carinho, lembranças e cuidado.</p>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
